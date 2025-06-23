@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/mymicroservice/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/mymicroservice/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/mymicroservice",
+  "projects": {
+    "answers": {
+      "type": "application",
+      "root": "apps/answers",
+      "entryFile": "main",
+      "sourceRoot": "apps/answers/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/answers/tsconfig.app.json"
+      }
+    },
+    "api-gateway": {
+      "type": "application",
+      "root": "apps/api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+      }
+    },
+    "course": {
+      "type": "application",
+      "root": "apps/course",
+      "entryFile": "main",
+      "sourceRoot": "apps/course/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/course/tsconfig.app.json"
+      }
+    },
+    "lesson": {
+      "type": "application",
+      "root": "apps/lesson",
+      "entryFile": "main",
+      "sourceRoot": "apps/lesson/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/lesson/tsconfig.app.json"
+      }
+    },
+    "lesson-material": {
+      "type": "application",
+      "root": "apps/lesson-material",
+      "entryFile": "main",
+      "sourceRoot": "apps/lesson-material/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/lesson-material/tsconfig.app.json"
+      }
+    },
+    "mymicroservice": {
+      "type": "application",
+      "root": "apps/mymicroservice",
+      "entryFile": "main",
+      "sourceRoot": "apps/mymicroservice/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/mymicroservice/tsconfig.app.json"
+      }
+    },
+    "quetions": {
+      "type": "application",
+      "root": "apps/quetions",
+      "entryFile": "main",
+      "sourceRoot": "apps/quetions/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/quetions/tsconfig.app.json"
+      }
+    }
+  }
+}
