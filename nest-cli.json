@@ -10,15 +10,6 @@
   "monorepo": true,
   "root": "apps/mymicroservice",
   "projects": {
-    "answers": {
-      "type": "application",
-      "root": "apps/answers",
-      "entryFile": "main",
-      "sourceRoot": "apps/answers/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/answers/tsconfig.app.json"
-      }
-    },
     "api-gateway": {
       "type": "application",
       "root": "apps/api-gateway",
@@ -28,31 +19,13 @@
         "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
       }
     },
-    "course": {
+    "auth": {
       "type": "application",
-      "root": "apps/course",
+      "root": "apps/auth",
       "entryFile": "main",
-      "sourceRoot": "apps/course/src",
+      "sourceRoot": "apps/auth/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/course/tsconfig.app.json"
-      }
-    },
-    "lesson": {
-      "type": "application",
-      "root": "apps/lesson",
-      "entryFile": "main",
-      "sourceRoot": "apps/lesson/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/lesson/tsconfig.app.json"
-      }
-    },
-    "lesson-material": {
-      "type": "application",
-      "root": "apps/lesson-material",
-      "entryFile": "main",
-      "sourceRoot": "apps/lesson-material/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/lesson-material/tsconfig.app.json"
+        "tsConfigPath": "apps/auth/tsconfig.app.json"
       }
     },
     "mymicroservice": {
@@ -71,6 +44,33 @@
       "sourceRoot": "apps/quetions/src",
       "compilerOptions": {
         "tsConfigPath": "apps/quetions/tsconfig.app.json"
+      }
+    },
+    "role": {
+      "type": "application",
+      "root": "apps/role",
+      "entryFile": "main",
+      "sourceRoot": "apps/role/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/role/tsconfig.app.json"
+      }
+    },
+    "test": {
+      "type": "application",
+      "root": "apps/test",
+      "entryFile": "main",
+      "sourceRoot": "apps/test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/test/tsconfig.app.json"
+      }
+    },
+    "user": {
+      "type": "application",
+      "root": "apps/user",
+      "entryFile": "main",
+      "sourceRoot": "apps/user/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/user/tsconfig.app.json"
       }
     }
   }

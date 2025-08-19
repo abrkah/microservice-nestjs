@@ -1,17 +1,13 @@
 import { NestFactory } from '@nestjs/core';
 import { ApiGatewayModule } from './api-gateway.module';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 async function bootstrap() {
-  const app = await NestFactory.create(ApiGatewayModule);
+  const app = await NestFactory.create(ApiGatewayModule); // Create HTTP server
 
-  // ✅ Enable CORS
-  app.enableCors({
-    origin: '*', // You can specify domains here (e.g., ['http://localhost:4200'])
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-  });
-
-  await app.listen(3000);
-  console.log(`🚀 API Gateway is running on: http://localhost:3000`);
+  await app.listen(3000); // Listen on port 3000 (or any port you want)
+  console.log('✅ API Gateway running on http://localhost:3000');
 }
 bootstrap();
